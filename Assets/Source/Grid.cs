@@ -126,7 +126,7 @@ public class Grid<TGridObject>
         }
         else
         {
-            return default(TGridObject);
+            throw new IllegalGridPlacmentException("Unable to get object outside grid");
         }
     }
 
