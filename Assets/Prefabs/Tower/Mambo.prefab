@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4661400033232473150}
   - component: {fileID: 4661400033232473151}
   - component: {fileID: 3139749742940276487}
+  - component: {fileID: 4527324810524525712}
   m_Layer: 0
   m_Name: Mambo
   m_TagString: Untagged
@@ -101,3 +102,23 @@ MonoBehaviour:
   name: Mambo
   projectile: {fileID: 3044365519599637973, guid: bf05bdf8660963c4fae3347f1c6dd583, type: 3}
   noteName: 1
+--- !u!95 &4527324810524525712
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4661400033232473148}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9ce67a0e0039abb4990b00a6fa9770c9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

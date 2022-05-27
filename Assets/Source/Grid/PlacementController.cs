@@ -28,7 +28,7 @@ public class PlacementController : MonoBehaviour
         {
             Instance = this;
         }
-        grid = new Grid<GameObject>(4, 6, CELL_SIZE, new Vector3(0 - 0.5f, 0 - 0.5f), (Grid<GameObject> g, int x, int y) => null);
+        grid = new Grid<GameObject>(4, 6, CELL_SIZE, new Vector3(-0.25f, -0.25f), (Grid<GameObject> g, int x, int y) => null);
         audioSource = gameObject.GetComponent<AudioSource>();
     }
     public void OnButtonClick()

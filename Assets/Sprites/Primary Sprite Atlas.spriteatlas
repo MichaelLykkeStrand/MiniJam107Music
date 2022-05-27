@@ -15,12 +15,24 @@ SpriteAtlas:
       compressionQuality: 50
       maxTextureSize: 2048
       textureCompression: 0
-      filterMode: 1
+      filterMode: 0
       generateMipMaps: 0
       readable: 0
       crunchedCompression: 0
       sRGB: 1
-    platformSettings: []
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 0
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
     packingSettings:
       serializedVersion: 2
       padding: 4
@@ -31,13 +43,32 @@ SpriteAtlas:
       enableAlphaDilation: 0
     secondaryTextureSettings: {}
     variantMultiplier: 1
-    packables: []
+    packables:
+    - {fileID: 2800000, guid: 0c6fdcfeeeae6e247a87db04dbacaff6, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
-  m_PackedSprites: []
-  m_PackedSpriteNamesToIndex: []
+  m_PackedSprites:
+  - {fileID: 1005410873, guid: 0c6fdcfeeeae6e247a87db04dbacaff6, type: 3}
+  - {fileID: 1718747529, guid: 0c6fdcfeeeae6e247a87db04dbacaff6, type: 3}
+  - {fileID: -2132638011, guid: 0c6fdcfeeeae6e247a87db04dbacaff6, type: 3}
+  - {fileID: -29620864, guid: 0c6fdcfeeeae6e247a87db04dbacaff6, type: 3}
+  - {fileID: 1833597715, guid: 0c6fdcfeeeae6e247a87db04dbacaff6, type: 3}
+  - {fileID: 1859807018, guid: 0c6fdcfeeeae6e247a87db04dbacaff6, type: 3}
+  - {fileID: -287834358, guid: 0c6fdcfeeeae6e247a87db04dbacaff6, type: 3}
+  - {fileID: -782863822, guid: 0c6fdcfeeeae6e247a87db04dbacaff6, type: 3}
+  - {fileID: 1575768406, guid: 0c6fdcfeeeae6e247a87db04dbacaff6, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - board_tileset_5
+  - board_tileset_4
+  - board_tileset_7
+  - board_tileset_6
+  - board_tileset_1
+  - board_tileset_0
+  - board_tileset_3
+  - board_tileset_2
+  - board_tileset_8
   m_RenderDataMap: {}
   m_Tag: Primary Sprite Atlas
   m_IsVariant: 0
