@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Wave : MonoBehaviour
+public class EnemyCollection : MonoBehaviour
 {
-    [SerializeField] List<Enemy> enemies;
+    public List<GameObject> enemies;
 }

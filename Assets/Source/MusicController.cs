@@ -78,6 +78,12 @@ public class MusicController : MonoBehaviour
         AudioSource audioSource = noteDict[key];
         audioSource.volume = audioSource.volume + 0.1f;
     }
+
+    public void DecreaseVolume(int key)
+    {
+        AudioSource audioSource = noteDict[key];
+        audioSource.volume = audioSource.volume - 0.1f;
+    }
     public double GetAudioSourceTime()
     {
         return (double)backgroundTrack.time;

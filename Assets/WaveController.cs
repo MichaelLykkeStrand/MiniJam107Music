@@ -7,7 +7,7 @@ public class WaveController : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField] private Transform[] spawnpoints;
-    [SerializeField] private List<Wave> waves;
+    [SerializeField] private List<EnemyCollection> collections;
     MusicController musicController;
     void Start()
     {
@@ -25,4 +25,5 @@ public class WaveController : MonoBehaviour
     {
 
     }
+
 }
