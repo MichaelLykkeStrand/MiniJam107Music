@@ -7,6 +7,7 @@ using UnityEngine;
 public class BaseTower : Tower
 {
     [SerializeField] private GameObject projectile;
+    [SerializeField] private float offset = 1f;
     private Animator animator;
 
     private void Start()
@@ -18,6 +19,6 @@ public class BaseTower : Tower
     {
         GameObject projectileInstance = Instantiate(projectile);
         animator.SetTrigger("Attack");
-        projectileInstance.transform.position = transform.position;
+        projectileInstance.transform.position = transform.position + Vector3.right * offset;
     }
 }
