@@ -41,7 +41,7 @@ public class Shop : MonoBehaviour
                 return tower;
             }
         }
-        throw new NoMatchException("Unable to find a macthing tower for that name!");
+        throw new NoMatchException("Unable to find a macthing tower for that  name: " + name);
     }
 }
 
