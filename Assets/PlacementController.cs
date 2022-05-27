@@ -5,11 +5,20 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(AudioSource))]
 public class PlacementController : MonoBehaviour
 {
     public static PlacementController Instance;
-    private TowerContainer towerContainer;
+    private TowerButton towerContainer;
     private GameObject placeHolder;
+    [SerializeField] private Shop shop;
+    [SerializeField] private CurrencyContainer currencyContainer;
+    [SerializeField] private AudioClip placementClip;
+    [SerializeField] private AudioClip failedPlacementClip;
+    private AudioSource audioSource;
+    public Color unoccupied;
+    public Color occupied;
+    [SerializeField] private GameObject gridPlacmentOverlay;
     public static Grid<GameObject> grid;
     public const int CELL_SIZE = 1;
     //private Store store;
@@ -20,12 +29,14 @@ public class PlacementController : MonoBehaviour
             Instance = this;
         }
         grid = new Grid<GameObject>(4, 6, CELL_SIZE, new Vector3(0 - 0.5f, 0 - 0.5f), (Grid<GameObject> g, int x, int y) => null);
+        audioSource = gameObject.GetComponent<AudioSource>();
     }
     public void OnButtonClick()
     {
         if (placeHolder != null) return;
-        this.towerContainer = EventSystem.current.currentSelectedGameObject.GetComponent<TowerContainer>();
-        placeHolder = Instantiate(towerContainer.placeHolderObject);
+        this.towerContainer = EventSystem.current.currentSelectedGameObject.GetComponent<TowerButton>();
+        placeHolder = Instantiate(towerContainer.GetPlaceHolderObject());
+        placeHolder.SetActive(true);
     }
 
     public void Update()
@@ -40,28 +51,44 @@ public class PlacementController : MonoBehaviour
         Vector2 snappedPlacementPosition = grid.SnapToGridLocation((Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition));
         if (Input.GetMouseButtonDown(0))
         {
-            //towerPrice = towerContainer.towerObject.GetComponent<Tower>().price;
             try
             {
                 if (grid.GetGridObject(snappedPlacementPosition) != null) return;
-                GameObject tower = Instantiate(towerContainer.towerObject);
+                GameObject tower = Instantiate(shop.Buy(towerContainer.GetTower().name, currencyContainer));
                 tower.transform.position = snappedPlacementPosition;
                 grid.SetGridObject(snappedPlacementPosition, tower);
+                audioSource.PlayOneShot(placementClip);
                 Deselect();
             }
             catch (IllegalGridPlacmentException)
             {
-
+                audioSource.PlayOneShot(failedPlacementClip);
+            }
+            catch(InsufficientFundsException) {
+                audioSource.PlayOneShot(failedPlacementClip);
             }
         }
     }
 
     private void MovePlaceHolder()
     {
-        if (towerContainer != null)
+        if (towerContainer == null) return;
+        try
         {
-            placeHolder.transform.position = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Vector2 snappedPlacementPosition = grid.SnapToGridLocation((Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition));
+            GameObject gameObject = grid.GetGridObject(snappedPlacementPosition);
+            gridPlacmentOverlay.SetActive(true);
+            SpriteRenderer spriteRenderer = gridPlacmentOverlay.GetComponent<SpriteRenderer>();
+            if(gameObject != null) spriteRenderer.color = occupied;
+            else if(currencyContainer.GetValue() < towerContainer.GetTower().price) spriteRenderer.color = occupied;
+            else spriteRenderer.color = unoccupied;
+            gridPlacmentOverlay.transform.position = snappedPlacementPosition;
         }
+        catch (IllegalGridPlacmentException)
+        {
+            gridPlacmentOverlay.SetActive(false);
+        }
+        placeHolder.transform.position = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition);
     }
 
     private void DestroyPlaceHolder()
@@ -75,6 +102,7 @@ public class PlacementController : MonoBehaviour
     private void Deselect()
     {
         towerContainer = null;
+        gridPlacmentOverlay.SetActive(false);
         Destroy(placeHolder);
     }
 }

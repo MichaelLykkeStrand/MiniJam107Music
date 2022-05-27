@@ -5,5 +5,6 @@ using UnityEngine;
 public abstract class Tower : MonoBehaviour
 {
     public int price;
+    public string name;
     public abstract void Attack();
 }
