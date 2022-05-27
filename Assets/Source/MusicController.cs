@@ -42,7 +42,6 @@ public class MusicController : MonoBehaviour
         var array = new Note[midiFile.GetNotes().Count];
         notes.CopyTo(array, 0);
         SetTimeStamps(array);
-        ResumeGame();
 
         Invoke(nameof(StartAudio), songDelayInSeconds);
     }
@@ -55,15 +54,8 @@ public class MusicController : MonoBehaviour
             timeStamps.Add((double)metricTimeSpan.Minutes * 60f + metricTimeSpan.Seconds + (double)metricTimeSpan.Milliseconds / 1000f);
         }
     }
-    public void ResumeGame()
-    {
 
-        backgroundTrack.UnPause();
-        Time.timeScale = 1;
-        
-    }
-
-    public void StartAudio()
+    private void StartAudio()
     {
         foreach (AudioClip clip in audioClips)
         {
