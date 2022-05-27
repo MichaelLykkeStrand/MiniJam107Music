@@ -11,6 +11,7 @@ public class MusicController : MonoBehaviour
     private List<double> timeStamps = new List<double>();
     [SerializeField] private AudioSource backgroundTrack;
     [SerializeField] private AudioClip[] audioClips;
+    private Dictionary<int, AudioSource> noteDict = new Dictionary<int, AudioSource>();
     public static MusicController Instance;
     public event Action onNote;
     public float songDelayInSeconds;
@@ -60,12 +61,20 @@ public class MusicController : MonoBehaviour
 
     private void StartAudio()
     {
-        foreach (AudioClip clip in audioClips)
+        for(int i = 0; i < audioClips.Length; i++)
         {
             AudioSource audioSource = this.gameObject.AddComponent<AudioSource>();
-            audioSource.clip = clip;
+            audioSource.volume = 0f;
+            noteDict.Add(i, audioSource);
+            audioSource.clip = audioClips[i];
             audioSource.Play();
         }
+    }
+
+    public void IncreaseVolume(int key)
+    {
+        AudioSource audioSource = noteDict[key];
+        audioSource.volume = audioSource.volume + 0.1f;
     }
     public double GetAudioSourceTime()
     {
