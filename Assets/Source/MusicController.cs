@@ -12,8 +12,9 @@ public class MusicController : MonoBehaviour
     [SerializeField] private AudioSource backgroundTrack;
     [SerializeField] private AudioClip[] audioClips;
     private Dictionary<int, AudioSource> noteDict = new Dictionary<int, AudioSource>();
+    private Note[] notesLookup;
     public static MusicController Instance;
-    public event Action onNote;
+    public event Action<Melanchall.DryWetMidi.MusicTheory.NoteName> onNote;
     public float songDelayInSeconds;
     private int noteIndex = 0;
 
@@ -33,7 +34,7 @@ public class MusicController : MonoBehaviour
         {
             if (GetAudioSourceTime() >= timeStamp){
                 Debug.Log(noteIndex);
-                onNote?.Invoke();
+                onNote?.Invoke(notesLookup[noteIndex].NoteName);
                 noteIndex++;
             }
         }
@@ -45,6 +46,7 @@ public class MusicController : MonoBehaviour
         var notes = midiFile.GetNotes();
         var array = new Note[midiFile.GetNotes().Count];
         notes.CopyTo(array, 0);
+        notesLookup = array;
         SetTimeStamps(array);
 
         Invoke(nameof(StartAudio), songDelayInSeconds);

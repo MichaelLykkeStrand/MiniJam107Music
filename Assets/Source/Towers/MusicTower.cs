@@ -13,4 +13,8 @@ public class MusicTower : BaseTower
         MusicController.Instance.onNote += Attack;
         MusicController.Instance.IncreaseVolume(soundKey);
     }
+    private void Attack(NoteName noteName)
+    {
+        base.Attack();
+    }
 }
