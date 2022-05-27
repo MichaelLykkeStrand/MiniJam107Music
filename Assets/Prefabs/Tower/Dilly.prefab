@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 4661400033232473150}
   - component: {fileID: 4661400033232473151}
   - component: {fileID: 1612115197386056295}
+  - component: {fileID: 729969765}
   m_Layer: 0
   m_Name: Dilly
-  m_TagString: Untagged
+  m_TagString: GravityObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100,3 +101,16 @@ MonoBehaviour:
   price: 300
   name: Dilly
   projectile: {fileID: 0}
+--- !u!114 &729969765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4661400033232473148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2085eab3b63758a4bbf6cc67aeae012d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gravity: 10

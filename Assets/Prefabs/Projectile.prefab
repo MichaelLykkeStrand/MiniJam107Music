@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3044365519599637960}
   - component: {fileID: 3044365519599637963}
   - component: {fileID: 3044365519599637962}
-  - component: {fileID: 3044365519599637966}
   - component: {fileID: 3044365519599637961}
   m_Layer: 0
   m_Name: Projectile
@@ -107,18 +106,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &3044365519599637966
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3044365519599637973}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7d7124541276124289f9d54522872f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!58 &3044365519599637961
 CircleCollider2D:
   m_ObjectHideFlags: 0
