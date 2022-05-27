@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    [SerializeField] private int speed = 10;
+    public int speed = 10;
+    public int damage = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,4 +17,6 @@ public class Projectile : MonoBehaviour
     {
         this.transform.position += (Vector3)Vector2.right*0.001f*speed;
     }
+
+
 }

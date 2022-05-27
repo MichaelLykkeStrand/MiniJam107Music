@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4661400033232473150}
   - component: {fileID: 4661400033232473151}
-  - component: {fileID: 1612115197386056295}
+  - component: {fileID: 7277548396157243360}
   m_Layer: 0
   m_Name: Dilly
   m_TagString: Untagged
@@ -85,7 +85,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1612115197386056295
+--- !u!114 &7277548396157243360
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -94,9 +94,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4661400033232473148}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0391118239dc964ebb2ea8799d422d4, type: 3}
+  m_Script: {fileID: 11500000, guid: a50c77ed2bfc5d74185de21c1e7ad7a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 300
+  price: 200
   name: Dilly
   projectile: {fileID: 3044365519599637973, guid: bf05bdf8660963c4fae3347f1c6dd583, type: 3}
+  noteName: 0

@@ -11,13 +11,15 @@ public class MusicController : MonoBehaviour
     private List<double> timeStamps = new List<double>();
     [SerializeField] private AudioSource backgroundTrack;
     [SerializeField] private AudioClip[] audioClips;
-    public Action onNote;
+    public static MusicController Instance;
+    public event Action onNote;
     public float songDelayInSeconds;
     private int noteIndex = 0;
 
     // Start is called before the first frame update
     void Start()
     {
+        Instance = this;
         StartGame();
     }
 
@@ -30,6 +32,7 @@ public class MusicController : MonoBehaviour
         {
             if (GetAudioSourceTime() >= timeStamp){
                 Debug.Log(noteIndex);
+                onNote?.Invoke();
                 noteIndex++;
             }
         }
