@@ -9,26 +9,39 @@ public class MusicController : MonoBehaviour
 {
     public static MidiFile midiFile;
     private List<double> timeStamps = new List<double>();
-    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioSource backgroundTrack;
+    [SerializeField] private AudioClip[] audioClips;
+    public Action onNote;
+    public float songDelayInSeconds;
+    private int noteIndex = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        StartGame();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        double timeStamp = timeStamps[noteIndex];
+        //Debug.Log(timeStamp);
+        if (noteIndex < timeStamps.Count)
+        {
+            if (GetAudioSourceTime() >= timeStamp){
+                Debug.Log(noteIndex);
+                noteIndex++;
+            }
+        }
     }
     public void StartGame()
     {
+        midiFile = MidiFile.Read(Application.streamingAssetsPath + "/customMidi.mid");
         Debug.Log("Starting game!");
         var notes = midiFile.GetNotes();
         var array = new Note[midiFile.GetNotes().Count];
         notes.CopyTo(array, 0);
-        nodeController.SetTimeStamps(array);
+        SetTimeStamps(array);
         ResumeGame();
 
         Invoke(nameof(StartAudio), songDelayInSeconds);
@@ -38,22 +51,34 @@ public class MusicController : MonoBehaviour
         for (int i = 0; i < notes.Length; i++)
         {
             Note note = notes[i];
-
-            if (note.NoteName == noteRestriction)
-            {
-                var metricTimeSpan = TimeConverter.ConvertTo<MetricTimeSpan>(note.Time, midiFile.GetTempoMap());
-                timeStamps.Add((double)metricTimeSpan.Minutes * 60f + metricTimeSpan.Seconds + (double)metricTimeSpan.Milliseconds / 1000f);
-                catch (Exception) { }
-            }
+            var metricTimeSpan = TimeConverter.ConvertTo<MetricTimeSpan>(note.Time, midiFile.GetTempoMap());
+            timeStamps.Add((double)metricTimeSpan.Minutes * 60f + metricTimeSpan.Seconds + (double)metricTimeSpan.Milliseconds / 1000f);
         }
+    }
+    public void ResumeGame()
+    {
+
+        backgroundTrack.UnPause();
+        Time.timeScale = 1;
+        
     }
 
     public void StartAudio()
     {
-        audioSource.Play();
+        foreach (AudioClip clip in audioClips)
+        {
+            AudioSource audioSource = this.gameObject.AddComponent<AudioSource>();
+            audioSource.clip = clip;
+            audioSource.Play();
+        }
     }
     public double GetAudioSourceTime()
     {
-        return (double)audioSource.time;
+        return (double)backgroundTrack.time;
+    }
+
+    public bool IsFinished()
+    {
+        return !backgroundTrack.isPlaying;
     }
 }

@@ -49,22 +49,23 @@ public class PlacementController : MonoBehaviour
     private void PlaceTowerOnPlaceHolder()
     {
         Vector2 snappedPlacementPosition = grid.SnapToGridLocation((Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition));
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && placeHolder != null)
         {
             try
             {
-                if (grid.GetGridObject(snappedPlacementPosition) != null) return;
+                if (grid.GetGridObject(snappedPlacementPosition) != null)
+                {
+                    audioSource.PlayOneShot(failedPlacementClip);
+                    return;
+                }
                 GameObject tower = Instantiate(shop.Buy(towerContainer.GetTower().name, currencyContainer));
                 tower.transform.position = snappedPlacementPosition;
                 grid.SetGridObject(snappedPlacementPosition, tower);
                 audioSource.PlayOneShot(placementClip);
                 Deselect();
             }
-            catch (IllegalGridPlacmentException)
+            catch (Exception)
             {
-                audioSource.PlayOneShot(failedPlacementClip);
-            }
-            catch(InsufficientFundsException) {
                 audioSource.PlayOneShot(failedPlacementClip);
             }
         }

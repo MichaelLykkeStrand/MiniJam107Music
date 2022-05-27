@@ -99,4 +99,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   price: 300
   name: Dilly
-  projectile: {fileID: 0}
+  projectile: {fileID: 3044365519599637973, guid: bf05bdf8660963c4fae3347f1c6dd583, type: 3}
