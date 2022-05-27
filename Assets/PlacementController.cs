@@ -9,7 +9,7 @@ using UnityEngine.UI;
 public class PlacementController : MonoBehaviour
 {
     public static PlacementController Instance;
-    private TowerButton towerContainer;
+    private TowerUiComponent towerContainer;
     private GameObject placeHolder;
     [SerializeField] private Shop shop;
     [SerializeField] private CurrencyContainer currencyContainer;
@@ -34,7 +34,7 @@ public class PlacementController : MonoBehaviour
     public void OnButtonClick()
     {
         if (placeHolder != null) return;
-        this.towerContainer = EventSystem.current.currentSelectedGameObject.GetComponent<TowerButton>();
+        this.towerContainer = EventSystem.current.currentSelectedGameObject.GetComponent<TowerUiComponent>();
         placeHolder = Instantiate(towerContainer.GetPlaceHolderObject());
         placeHolder.SetActive(true);
     }

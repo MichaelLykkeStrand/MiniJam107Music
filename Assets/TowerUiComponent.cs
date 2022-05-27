@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(TextMeshProUGUI))]
-public class TowerButton : MonoBehaviour
+public class TowerUiComponent : MonoBehaviour
 {
     [SerializeField] private Shop shop;
     [SerializeField] private string towerName;
@@ -25,6 +25,9 @@ public class TowerButton : MonoBehaviour
         textMeshProUGUI.text = towerName;
         textMeshProUGUI2.text = this.tower.price.ToString();
         spriterenderer.sprite = sprite;
+        Color originalColor = spriterenderer.color;
+        Color color = new Color(originalColor.r, originalColor.g, originalColor.b, originalColor.a-0.2f);
+        spriterenderer.color = color;
         image.sprite = sprite;
     }
 
