@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Despawn : MonoBehaviour
 {
-    [SerializeField, Min(0)] private float despawnTime = 1f;
+    [SerializeField, Min(0)] public float despawnTime = 1f;
 
-    private void Awake()
+    private void Start()
     {
         StartCoroutine(CooldownCoroutine());
     }

@@ -29,6 +29,7 @@ public class Enemy : MonoBehaviour
     private void HealthContainer_OnEmpty()
     {
         player.GetComponent<CurrencyContainer>().Add(dropMoney);
+        MusicController.GlobalAudioSource.PlayOneShot(deathSound);
     }
 
     private void FixedUpdate()
@@ -38,7 +39,16 @@ public class Enemy : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        target = collision.gameObject;
+        try
+        {
+            collision.gameObject.GetComponent<Tower>();
+            target = collision.gameObject;
+        }
+        catch (Exception)
+        {
+
+        }
+        
     }
 
     private void Update()
@@ -50,10 +60,25 @@ public class Enemy : MonoBehaviour
     {
         if (!isOnCooldown && target != null)
         {
-            audioSource.PlayOneShot(attackSound);
-            target.GetComponent<HealthContainer>().Subtract(damage);
-            StartCoroutine(CooldownCoroutine());
+            try
+            {
+                HealthContainer health = target.GetComponent<HealthContainer>();
+                health.OnEmpty += OnTargetDeath;
+                health.Subtract(damage);
+                audioSource.PlayOneShot(attackSound);
+                StartCoroutine(CooldownCoroutine());
+            }
+            catch (Exception)
+            {
+
+            }
+
         }
+    }
+
+    private void OnTargetDeath()
+    {
+        target = null;
     }
 
     IEnumerator CooldownCoroutine()
@@ -66,6 +91,5 @@ public class Enemy : MonoBehaviour
     private void OnDestroy()
     {
         healthContainer.OnEmpty -= HealthContainer_OnEmpty;
-        MusicController.GlobalAudioSource.PlayOneShot(deathSound);
     }
 }

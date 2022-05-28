@@ -17,8 +17,7 @@ public class BaseTower : Tower
 
     public override void Attack()
     {
-        animator.SetTrigger("AttackCancel");
-        animator.SetTrigger("Attack");
+        animator.Play("Attack");
         GameObject projectileInstance = Instantiate(projectile);
         projectileInstance.transform.position = transform.position + Vector3.right * offset;
     }

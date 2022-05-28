@@ -22,7 +22,7 @@ public class MusicController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GlobalAudioSource = GetComponent<AudioSource>();
+        GlobalAudioSource = gameObject.AddComponent<AudioSource>();
         Instance = this;
         StartGame();
     }

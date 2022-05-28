@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7f019bcde9f333047a4e36c2ff02acb1
+guid: 6df7e15d901f1584fb90ca6d3140d0f8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -116,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: gum_projectile_frames_0
+      name: gum_shoot_frames_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 21
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b271bc9ed3a33b40a8f99884422ebf1
-      internalID: -715676870
+      spriteID: ff1c9743c1f6c9743b3cf62f21fa08d1
+      internalID: -444945342
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gum_projectile_frames_1
+      name: gum_shoot_frames_1
       rect:
         serializedVersion: 2
-        x: 21
+        x: 32
         y: 0
-        width: 21
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,20 +151,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23485065845bef142847fe405dd7f7a3
-      internalID: 1070342573
+      spriteID: 9027fbbfc558ee241b44a5b3a4ad4ca9
+      internalID: -179357666
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gum_projectile_frames_2
+      name: gum_shoot_frames_2
       rect:
         serializedVersion: 2
-        x: 42
+        x: 64
         y: 0
-        width: 21
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,20 +172,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db967ef307701574eb1a37297889e6b9
-      internalID: 957001576
+      spriteID: 17b5b5007843fe7499fc4c7b2fb239fa
+      internalID: -738046307
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gum_projectile_frames_3
+      name: gum_shoot_frames_3
       rect:
         serializedVersion: 2
-        x: 63
+        x: 96
         y: 0
-        width: 21
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,20 +193,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 671e37d21fc3ed744a06c5cf74fe4156
-      internalID: -1703262340
+      spriteID: 76f943f4f87b12d499998d2e9956659c
+      internalID: 1452450560
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gum_projectile_frames_4
+      name: gum_shoot_frames_4
       rect:
         serializedVersion: 2
-        x: 84
+        x: 128
         y: 0
-        width: 21
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -214,20 +214,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbc7213af0cff5142857a4c91af63a3c
-      internalID: 1519756608
+      spriteID: aa7d0daf5ccb49040860bf84944d3147
+      internalID: -11467210
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gum_projectile_frames_5
+      name: gum_shoot_frames_5
       rect:
         serializedVersion: 2
-        x: 105
+        x: 160
         y: 0
-        width: 21
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -235,29 +235,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5744e8feea893640b2150a518e02b6e
-      internalID: -1490661927
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gum_projectile_frames_6
-      rect:
-        serializedVersion: 2
-        x: 126
-        y: 0
-        width: 21
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9c1ef2ce9bcf43a41a2743ce77a7bd16
-      internalID: 1086655726
+      spriteID: 757fe76817d615840b1c50a6fc8cf0a3
+      internalID: 1956290101
       vertices: []
       indices: 
       edges: []
@@ -273,13 +252,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      gum_projectile_frames_3: -1703262340
-      gum_projectile_frames_6: 1086655726
-      gum_projectile_frames_0: -715676870
-      gum_projectile_frames_5: -1490661927
-      gum_projectile_frames_4: 1519756608
-      gum_projectile_frames_2: 957001576
-      gum_projectile_frames_1: 1070342573
+      gum_shoot_frames_2: -738046307
+      gum_shoot_frames_4: -11467210
+      gum_shoot_frames_3: 1452450560
+      gum_shoot_frames_1: -179357666
+      gum_shoot_frames_5: 1956290101
+      gum_shoot_frames_0: -444945342
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

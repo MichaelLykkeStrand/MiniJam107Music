@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7f019bcde9f333047a4e36c2ff02acb1
+guid: 6c1b82c2f2f56db45857436dd62dea42
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -116,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: gum_projectile_frames_0
+      name: chomper_approach_frames_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 21
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b271bc9ed3a33b40a8f99884422ebf1
-      internalID: -715676870
+      spriteID: d97026b04af3a8d44869bae48ab69424
+      internalID: -421333967
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gum_projectile_frames_1
+      name: chomper_approach_frames_1
       rect:
         serializedVersion: 2
-        x: 21
+        x: 32
         y: 0
-        width: 21
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,20 +151,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23485065845bef142847fe405dd7f7a3
-      internalID: 1070342573
+      spriteID: f274cb04a8eb93e4eba3f9ae683e3916
+      internalID: 2086138217
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gum_projectile_frames_2
+      name: chomper_approach_frames_2
       rect:
         serializedVersion: 2
-        x: 42
+        x: 64
         y: 0
-        width: 21
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,20 +172,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db967ef307701574eb1a37297889e6b9
-      internalID: 957001576
+      spriteID: cae0715a616c52b46b3507833d17115d
+      internalID: 1208884439
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gum_projectile_frames_3
+      name: chomper_approach_frames_3
       rect:
         serializedVersion: 2
-        x: 63
+        x: 96
         y: 0
-        width: 21
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,20 +193,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 671e37d21fc3ed744a06c5cf74fe4156
-      internalID: -1703262340
+      spriteID: 41e419074dedc2c4da871d426c7b904f
+      internalID: 736068703
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gum_projectile_frames_4
+      name: chomper_approach_frames_4
       rect:
         serializedVersion: 2
-        x: 84
+        x: 128
         y: 0
-        width: 21
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -214,20 +214,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbc7213af0cff5142857a4c91af63a3c
-      internalID: 1519756608
+      spriteID: 16ec26f06d5264241948ed150592c51a
+      internalID: 186916294
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gum_projectile_frames_5
+      name: chomper_approach_frames_5
       rect:
         serializedVersion: 2
-        x: 105
+        x: 160
         y: 0
-        width: 21
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -235,29 +235,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5744e8feea893640b2150a518e02b6e
-      internalID: -1490661927
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gum_projectile_frames_6
-      rect:
-        serializedVersion: 2
-        x: 126
-        y: 0
-        width: 21
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9c1ef2ce9bcf43a41a2743ce77a7bd16
-      internalID: 1086655726
+      spriteID: 05477e92ab433d041ade458e90cc024e
+      internalID: -1669284178
       vertices: []
       indices: 
       edges: []
@@ -273,13 +252,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      gum_projectile_frames_3: -1703262340
-      gum_projectile_frames_6: 1086655726
-      gum_projectile_frames_0: -715676870
-      gum_projectile_frames_5: -1490661927
-      gum_projectile_frames_4: 1519756608
-      gum_projectile_frames_2: 957001576
-      gum_projectile_frames_1: 1070342573
+      chomper_approach_frames_1: 2086138217
+      chomper_approach_frames_4: 186916294
+      chomper_approach_frames_5: -1669284178
+      chomper_approach_frames_3: 736068703
+      chomper_approach_frames_2: 1208884439
+      chomper_approach_frames_0: -421333967
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
