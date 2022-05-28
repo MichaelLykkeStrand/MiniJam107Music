@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f4f8e5c055dc2e348b354a4e3c5cf05c
+guid: eb19eec0270cc834dbe10a183bc7e833
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -116,112 +116,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: turret_sprites_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9f69346f8f3b4ec43b4295025e5dbc60
-      internalID: -890359449
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: turret_sprites_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 32309d93df194fc4790f470b7060b511
-      internalID: 1472854310
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: turret_sprites_2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 457c0dec270631240acf8f063df05afd
-      internalID: 656388437
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: turret_sprites_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 74e22d83906e2c4458b5f2d6f7d77520
-      internalID: 44539740
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: turret_sprites_4
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6bd2caedadab5aa468a308d4be139a63
-      internalID: 1517680129
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: turret_sprites_5
+      name: disposer_idle_frames_0
       rect:
         serializedVersion: 2
         x: 0
@@ -235,14 +130,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5770ae22e6f4b8e4b8d95bce6c32108c
-      internalID: 546296446
+      spriteID: b351d87e593d8f34f835a5df3bf5fb28
+      internalID: -942358342
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: turret_sprites_6
+      name: disposer_idle_frames_1
       rect:
         serializedVersion: 2
         x: 32
@@ -256,14 +151,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ae7bfa0582702347b4b6c808c711a15
-      internalID: -1785076011
+      spriteID: bb1bf58422268cf4a9c8d34518e100f4
+      internalID: 1804931782
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: turret_sprites_7
+      name: disposer_idle_frames_2
       rect:
         serializedVersion: 2
         x: 64
@@ -277,14 +172,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 769e3814a0203af4d932efa34273a048
-      internalID: 789562692
+      spriteID: c5cf2591adf214a4e84ee1ce313a4688
+      internalID: 681818019
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: turret_sprites_8
+      name: disposer_idle_frames_3
       rect:
         serializedVersion: 2
         x: 96
@@ -298,14 +193,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2dd6851a9441a54c9f8aef8e52e549c
-      internalID: -2056098793
+      spriteID: 8ebf719f69b15c0408f62c6036e268ae
+      internalID: 1577501677
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: turret_sprites_9
+      name: disposer_idle_frames_4
       rect:
         serializedVersion: 2
         x: 128
@@ -319,8 +214,155 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e78e2541deff6e48ac6ab36f3efcbed
-      internalID: -1302558876
+      spriteID: 68852aa0e82329941b9ba113283d4ee9
+      internalID: 2042015039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: disposer_idle_frames_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9241e807fa796e4281915836df475d1
+      internalID: 1798955877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: disposer_idle_frames_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d452bebc0f65b594bbca6b5c1b8d4250
+      internalID: -723676073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: disposer_idle_frames_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0df4e1756910a5348959eeb4445338c0
+      internalID: -62806374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: disposer_idle_frames_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b135f1cd988f5fc43804b9caccda4e5d
+      internalID: -1001061771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: disposer_idle_frames_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da0cdb54fc7272846a44bfe66a9a660e
+      internalID: 982088430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: disposer_idle_frames_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32fe6eb93f1b679469c2d48f29a365bb
+      internalID: -1320529512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: disposer_idle_frames_11
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0fafeef379558246af5ce6983d1320c
+      internalID: -572795837
       vertices: []
       indices: 
       edges: []
@@ -336,16 +378,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      turret_sprites_4: 1517680129
-      turret_sprites_2: 656388437
-      turret_sprites_7: 789562692
-      turret_sprites_5: 546296446
-      turret_sprites_9: -1302558876
-      turret_sprites_0: -890359449
-      turret_sprites_1: 1472854310
-      turret_sprites_3: 44539740
-      turret_sprites_6: -1785076011
-      turret_sprites_8: -2056098793
+      disposer_idle_frames_0: -942358342
+      disposer_idle_frames_1: 1804931782
+      disposer_idle_frames_4: 2042015039
+      disposer_idle_frames_5: 1798955877
+      disposer_idle_frames_6: -723676073
+      disposer_idle_frames_7: -62806374
+      disposer_idle_frames_3: 1577501677
+      disposer_idle_frames_8: -1001061771
+      disposer_idle_frames_11: -572795837
+      disposer_idle_frames_9: 982088430
+      disposer_idle_frames_2: 681818019
+      disposer_idle_frames_10: -1320529512
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

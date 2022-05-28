@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class DeathTrigger : MonoBehaviour
 {
+    [SerializeField] GameObject gameOverCanvas;
+    private GameObject canvasInstance;
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Destroy(collision.gameObject);
+        if (canvasInstance != null) return;
+        canvasInstance = Instantiate(gameOverCanvas);
     }
 }
