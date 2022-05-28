@@ -7,7 +7,7 @@ using UnityEngine;
 public class BaseTower : Tower
 {
     [SerializeField] private GameObject projectile;
-    [SerializeField] private float offset = 1f;
+    [SerializeField] private float offset = .75f;
     private Animator animator;
 
     private void Start()
@@ -17,8 +17,9 @@ public class BaseTower : Tower
 
     public override void Attack()
     {
-        GameObject projectileInstance = Instantiate(projectile);
+        animator.SetTrigger("AttackCancel");
         animator.SetTrigger("Attack");
+        GameObject projectileInstance = Instantiate(projectile);
         projectileInstance.transform.position = transform.position + Vector3.right * offset;
     }
 }

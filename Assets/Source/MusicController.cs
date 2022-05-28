@@ -7,6 +7,7 @@ using UnityEngine;
 
 public class MusicController : MonoBehaviour
 {
+    public static AudioSource GlobalAudioSource { get; private set; }
     public static MidiFile midiFile;
     private List<double> timeStamps = new List<double>();
     [SerializeField] private AudioSource backgroundTrack;
@@ -14,13 +15,14 @@ public class MusicController : MonoBehaviour
     private Dictionary<int, AudioSource> noteDict = new Dictionary<int, AudioSource>();
     private Note[] notesLookup;
     public static MusicController Instance;
-    public event Action<Melanchall.DryWetMidi.MusicTheory.NoteName> onNote;
+    public event Action<Note> OnNote;
     public float songDelayInSeconds;
     private int noteIndex = 0;
 
     // Start is called before the first frame update
     void Start()
     {
+        GlobalAudioSource = GetComponent<AudioSource>();
         Instance = this;
         StartGame();
     }
@@ -34,7 +36,7 @@ public class MusicController : MonoBehaviour
         {
             if (GetAudioSourceTime() >= timeStamp){
                 Debug.Log(noteIndex);
-                onNote?.Invoke(notesLookup[noteIndex].NoteName);
+                OnNote?.Invoke(notesLookup[noteIndex]);
                 noteIndex++;
             }
         }
