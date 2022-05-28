@@ -12,6 +12,10 @@ PrefabInstance:
       value: Gum
       objectReference: {fileID: 0}
     - target: {fileID: 3139749742940276487, guid: 5c8cf09f952daf24eacea104fda62899, type: 3}
+      propertyPath: noteName
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3139749742940276487, guid: 5c8cf09f952daf24eacea104fda62899, type: 3}
       propertyPath: projectile
       value: 
       objectReference: {fileID: 8715662310459988798, guid: 7dcfe6bedc8b5c04db0f4ae48f99c1a4, type: 3}

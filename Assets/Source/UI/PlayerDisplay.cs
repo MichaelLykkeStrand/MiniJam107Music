@@ -6,7 +6,6 @@ using UnityEngine;
 public class PlayerDisplay : MonoBehaviour
 {
     [SerializeField] private CurrencyContainer currencyContainer;
-    [SerializeField] private TextMeshProUGUI healthText;
     [SerializeField] private TextMeshProUGUI currencyText;
     // Start is called before the first frame update
     void Start()

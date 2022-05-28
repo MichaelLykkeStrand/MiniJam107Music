@@ -6,11 +6,22 @@ using UnityEngine;
 public class Shop : MonoBehaviour
 {
     [SerializeField] private List<GameObject> towerObjects;
+    [SerializeField] private int GravityKillPrice = 900;
 
     // Update is called once per frame
     void Update()
     {
 
+    }
+
+    public void BuyGravityKill(CurrencyContainer currencyContainer)
+    {
+        currencyContainer.Subtract(GravityKillPrice);
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        foreach (GameObject gameObject in enemies)
+        {
+            gameObject.GetComponent<Enemy>().GravityKill();
+        }
     }
 
     public GameObject Buy(string name, CurrencyContainer currencyContainer)

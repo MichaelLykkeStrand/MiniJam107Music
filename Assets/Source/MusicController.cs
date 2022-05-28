@@ -79,7 +79,7 @@ public class MusicController : MonoBehaviour
     public void IncreaseVolume(int key)
     {
         AudioSource audioSource = noteDict[key];
-        audioSource.volume = audioSource.volume + 0.1f;
+        audioSource.volume = audioSource.volume + 0.33f;
     }
 
     public void DecreaseVolume(int key)

@@ -18,6 +18,7 @@ public class Enemy : MonoBehaviour
     private GameObject player;
     private HealthContainer healthContainer;
     private Animator animator;
+    private bool gravityKill;
 
     private void Start()
     {
@@ -37,7 +38,20 @@ public class Enemy : MonoBehaviour
 
     private void FixedUpdate()
     {
-        this.transform.position -= (Vector3)Vector2.right * 0.001f * speed;
+        if (!gravityKill)
+        {
+            this.transform.position -= (Vector3)Vector2.right * 0.001f * speed;
+        }
+        else
+        {
+            this.transform.position -= (Vector3)Vector2.up * 0.001f * speed;
+        }
+
+    }
+
+    public void GravityKill()
+    {
+        this.gravityKill = true;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
