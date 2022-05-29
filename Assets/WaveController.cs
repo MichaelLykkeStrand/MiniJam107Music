@@ -29,6 +29,7 @@ public class WaveController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (noteIndex == timeStamps.Count - 1) return;
         double timeStamp = timeStamps[noteIndex];
         if (noteIndex < timeStamps.Count)
         {

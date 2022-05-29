@@ -28,5 +28,6 @@ public class MusicTower : BaseTower
     private void OnDestroy()
     {
         MusicController.Instance.OnNote -= Attack;
+        MusicController.Instance.DecreaseVolume((int)noteName);
     }
 }

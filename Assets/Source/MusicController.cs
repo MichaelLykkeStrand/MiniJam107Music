@@ -32,7 +32,7 @@ public class MusicController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (noteIndex >= timeStamps.Count -1) return;
+        if (noteIndex == timeStamps.Count) return;
         if(noteIndex == timeStamps.Count - 1)
         {
             noteIndex++;
@@ -86,13 +86,13 @@ public class MusicController : MonoBehaviour
     public void IncreaseVolume(int key)
     {
         AudioSource audioSource = noteDict[key];
-        audioSource.volume = audioSource.volume + 0.33f;
+        audioSource.volume = audioSource.volume + 0.34f;
     }
 
     public void DecreaseVolume(int key)
     {
         AudioSource audioSource = noteDict[key];
-        audioSource.volume = audioSource.volume - 0.1f;
+        audioSource.volume = audioSource.volume - 0.34f;
     }
     public double GetAudioSourceTime()
     {

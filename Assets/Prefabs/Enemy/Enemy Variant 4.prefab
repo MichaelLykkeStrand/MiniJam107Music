@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1435928149628214789, guid: 6b0f00fad5a5b3a4fbb3899db9cc201a, type: 3}
       propertyPath: m_Name
-      value: Enemy
+      value: Enemy Variant 4
       objectReference: {fileID: 0}
     - target: {fileID: 1435928149628214790, guid: 6b0f00fad5a5b3a4fbb3899db9cc201a, type: 3}
       propertyPath: speed
@@ -70,6 +70,14 @@ PrefabInstance:
     - target: {fileID: 1435928149628214808, guid: 6b0f00fad5a5b3a4fbb3899db9cc201a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519019447418390361, guid: 6b0f00fad5a5b3a4fbb3899db9cc201a, type: 3}
+      propertyPath: value
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519019447418390361, guid: 6b0f00fad5a5b3a4fbb3899db9cc201a, type: 3}
+      propertyPath: maxValue
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 8846597550443505616, guid: 6b0f00fad5a5b3a4fbb3899db9cc201a, type: 3}
       propertyPath: m_Controller

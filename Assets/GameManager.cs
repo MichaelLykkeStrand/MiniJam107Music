@@ -34,9 +34,20 @@ public class GameManager : MonoBehaviour
         StartCoroutine(LoadMainScene());
     }
 
+    public void Won()
+    {
+        StartCoroutine(LoadWinScene());
+    }
+
     public IEnumerator LoadMainScene()
     {
         yield return StartCoroutine(fader.FadeInElement(darknessCanvas, 1));
         SceneManager.LoadScene(1);
+    }
+
+    public IEnumerator LoadWinScene()
+    {
+        yield return StartCoroutine(fader.FadeInElement(darknessCanvas, 1));
+        SceneManager.LoadScene(2);
     }
 }
