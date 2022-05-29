@@ -103,12 +103,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4bbb1a5a3dcaad4a94542d85908a8ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dropMoney: 5
+  dropMoney: 10
   speed: 50
   damage: 40
   attackSpeed: 0.5
   deathSound: {fileID: 8300000, guid: 6841165b7cf82bf48a819e47a05ef7a3, type: 3}
   attackSound: {fileID: 8300000, guid: da480701b10b014409ec471fbc6d61c1, type: 3}
+  gravitySound: {fileID: 8300000, guid: 90f217e4eebb7474e8a051928a5124d8, type: 3}
 --- !u!114 &-4107872318676876386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,8 +122,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3303878536b1fa145a2c645d0a0913bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxValue: 100
-  value: 100
+  maxValue: 120
+  value: 120
 --- !u!58 &7699549683265528744
 CircleCollider2D:
   m_ObjectHideFlags: 0

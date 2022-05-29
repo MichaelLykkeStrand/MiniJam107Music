@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a50c77ed2bfc5d74185de21c1e7ad7a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 200
+  price: 150
   name: Dilly
   projectile: {fileID: 7350210420915409460, guid: 345eccf7d98f1d24ca6ffeb6e99cd06b, type: 3}
   offsetX: 0.75
