@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 9dd52fd001db49749a0dc55f080ffbb2, type: 2}
+    - target: {fileID: 5766629261130699496, guid: 9d14eb51a3785b940995abcc4d85e23c, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -4318291175376192582, guid: 001950cd089b9804b9bc844bad261b16, type: 2}
     - target: {fileID: 7756991681668094656, guid: 9d14eb51a3785b940995abcc4d85e23c, type: 3}
       propertyPath: m_Sprite
       value: 

@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5766629261130699496, guid: 9d14eb51a3785b940995abcc4d85e23c, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -4318291175376192582, guid: 001950cd089b9804b9bc844bad261b16, type: 2}
     - target: {fileID: 7699549683265528744, guid: 9d14eb51a3785b940995abcc4d85e23c, type: 3}
       propertyPath: m_Radius
       value: 0.2833445
@@ -25,7 +29,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7756991681668094656, guid: 9d14eb51a3785b940995abcc4d85e23c, type: 3}
       propertyPath: m_Color.r
-      value: 0.8679245
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7756991681668094658, guid: 9d14eb51a3785b940995abcc4d85e23c, type: 3}
       propertyPath: m_Name

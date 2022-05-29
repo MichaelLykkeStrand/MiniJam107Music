@@ -572,6 +572,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 7657a538a26194b1789c2b15bfc70a80, type: 3}
   - {fileID: 8300000, guid: 2600526cc077c40d995d170ce0d3c3f1, type: 3}
   songDelayInSeconds: 0
+  audioMixerGroupMusic: {fileID: 7598395430454964484, guid: 001950cd089b9804b9bc844bad261b16, type: 2}
+  audioMixerGroupSFX: {fileID: -4318291175376192582, guid: 001950cd089b9804b9bc844bad261b16, type: 2}
 --- !u!4 &254329970
 Transform:
   m_ObjectHideFlags: 0
@@ -596,7 +598,7 @@ AudioSource:
   m_GameObject: {fileID: 254329968}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 7598395430454964484, guid: 001950cd089b9804b9bc844bad261b16, type: 2}
   m_audioClip: {fileID: 8300000, guid: af84e41926c7521489f9a32a4fc52656, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.238
@@ -5660,6 +5662,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlacementController
       objectReference: {fileID: 0}
+    - target: {fileID: 2446588007363515819, guid: 2fe96f4eb990a62469eb2d1dbed448a3, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -4318291175376192582, guid: 001950cd089b9804b9bc844bad261b16, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2fe96f4eb990a62469eb2d1dbed448a3, type: 3}
 --- !u!1001 &980292528448349841
@@ -5849,6 +5855,10 @@ PrefabInstance:
     - target: {fileID: 7085448853178155758, guid: 3d2c7c929a2f24d408ea2a1c1c29b862, type: 3}
       propertyPath: m_Name
       value: GameManagerPackage
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695704644318913078, guid: 3d2c7c929a2f24d408ea2a1c1c29b862, type: 3}
+      propertyPath: m_PixelPerfect
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d2c7c929a2f24d408ea2a1c1c29b862, type: 3}
