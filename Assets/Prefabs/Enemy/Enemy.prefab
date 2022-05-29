@@ -122,8 +122,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3303878536b1fa145a2c645d0a0913bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxValue: 120
-  value: 120
+  maxValue: 130
+  value: 130
 --- !u!58 &7699549683265528744
 CircleCollider2D:
   m_ObjectHideFlags: 0

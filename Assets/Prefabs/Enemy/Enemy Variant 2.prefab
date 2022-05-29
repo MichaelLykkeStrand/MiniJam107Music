@@ -13,11 +13,11 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 6104198f0b2fa974ab46ed576c5daa3d, type: 2}
     - target: {fileID: -4107872318676876386, guid: 9d14eb51a3785b940995abcc4d85e23c, type: 3}
       propertyPath: value
-      value: 120
+      value: 170
       objectReference: {fileID: 0}
     - target: {fileID: -4107872318676876386, guid: 9d14eb51a3785b940995abcc4d85e23c, type: 3}
       propertyPath: maxValue
-      value: 120
+      value: 170
       objectReference: {fileID: 0}
     - target: {fileID: 7756991681668094656, guid: 9d14eb51a3785b940995abcc4d85e23c, type: 3}
       propertyPath: m_Sprite
@@ -25,7 +25,7 @@ PrefabInstance:
       objectReference: {fileID: 1666849470, guid: 68685156030ec2a43a15802c5bbd154c, type: 3}
     - target: {fileID: 7756991681668094657, guid: 9d14eb51a3785b940995abcc4d85e23c, type: 3}
       propertyPath: speed
-      value: 140
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 7756991681668094657, guid: 9d14eb51a3785b940995abcc4d85e23c, type: 3}
       propertyPath: damage
