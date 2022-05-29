@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneController : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
-    public static SceneController Instance;
+    public static GameManager Instance;
     private Fader fader;
     [SerializeField] CanvasGroup darknessCanvas;
 
@@ -22,6 +22,11 @@ public class SceneController : MonoBehaviour
         fader = FindObjectOfType<Fader>();
         darknessCanvas.alpha = 1;
 
+    }
+
+    private void Start()
+    {
+        StartCoroutine(fader.FadeOutElement(darknessCanvas, 1));
     }
 
     public void Play()
