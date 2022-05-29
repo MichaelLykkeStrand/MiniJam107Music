@@ -33,7 +33,6 @@ public class PlacementController : MonoBehaviour
     }
     public void OnButtonClick()
     {
-        if (placeHolder != null) return;
         this.towerContainer = EventSystem.current.currentSelectedGameObject.GetComponent<TowerUiComponent>();
         placeHolder = Instantiate(towerContainer.GetPlaceHolderObject());
         placeHolder.SetActive(true);
