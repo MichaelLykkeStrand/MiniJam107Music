@@ -13,7 +13,7 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: d4be5f03079d2ac498127b0f79884eee, type: 2}
     - target: {fileID: 4661400033232473148, guid: a5890e3df4801e5448a77ce60a5b5863, type: 3}
       propertyPath: m_Name
-      value: Barry Variant
+      value: Barry
       objectReference: {fileID: 0}
     - target: {fileID: 4661400033232473150, guid: a5890e3df4801e5448a77ce60a5b5863, type: 3}
       propertyPath: m_RootOrder
@@ -71,5 +71,9 @@ PrefabInstance:
       propertyPath: noteName
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 7277548396157243360, guid: a5890e3df4801e5448a77ce60a5b5863, type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 3790679129583910556, guid: 50c659acc1baaf4458dd6a3b4c2065e2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5890e3df4801e5448a77ce60a5b5863, type: 3}
