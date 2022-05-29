@@ -7,13 +7,12 @@ using UnityEngine;
 public class BaseTower : Tower
 {
     [SerializeField] private GameObject projectile;
-    [SerializeField] private AudioSource audioSource;
-    [SerializeField] private float offset = .75f;
+    [SerializeField] private float offsetX = .75f;
+    [SerializeField] private float offsetY = 0f;
     private Animator animator;
 
     private void Start()
     {
-        audioSource = GetComponent<AudioSource>();
         animator = GetComponent<Animator>();
     }
 
@@ -21,6 +20,7 @@ public class BaseTower : Tower
     {
         animator.Play("Attack");
         GameObject projectileInstance = Instantiate(projectile);
-        projectileInstance.transform.position = transform.position + Vector3.right * offset;
+        projectileInstance.transform.position = transform.position + Vector3.right * offsetX;
+        projectileInstance.transform.position = projectileInstance.transform.position + Vector3.up * offsetY;
     }
 }

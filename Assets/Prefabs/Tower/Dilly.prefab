@@ -104,8 +104,8 @@ MonoBehaviour:
   price: 200
   name: Dilly
   projectile: {fileID: 7350210420915409460, guid: 345eccf7d98f1d24ca6ffeb6e99cd06b, type: 3}
-  audioSource: {fileID: 0}
-  offset: 0.7
+  offsetX: 0.75
+  offsetY: 0
   noteName: 0
 --- !u!95 &4527324810524525712
 Animator:

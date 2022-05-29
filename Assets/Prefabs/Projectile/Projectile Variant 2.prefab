@@ -63,6 +63,10 @@ PrefabInstance:
       propertyPath: damage
       value: 70
       objectReference: {fileID: 0}
+    - target: {fileID: 3044365519599637966, guid: bf05bdf8660963c4fae3347f1c6dd583, type: 3}
+      propertyPath: speedX
+      value: 80
+      objectReference: {fileID: 0}
     - target: {fileID: 3044365519599637973, guid: bf05bdf8660963c4fae3347f1c6dd583, type: 3}
       propertyPath: m_Name
       value: Projectile Variant 2

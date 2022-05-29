@@ -44,7 +44,8 @@ public class Enemy : MonoBehaviour
         }
         else
         {
-            this.transform.position -= (Vector3)Vector2.up * 0.001f * speed;
+            this.transform.position += (Vector3)Vector2.up * 0.001f * speed;
+            healthContainer.Subtract(2);
         }
 
     }
