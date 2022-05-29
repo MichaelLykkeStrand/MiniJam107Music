@@ -39,6 +39,11 @@ public class GameManager : MonoBehaviour
         StartCoroutine(LoadWinScene());
     }
 
+    public void Title()
+    {
+        StartCoroutine(LoadTitleScene());
+    }
+
     public IEnumerator LoadMainScene()
     {
         yield return StartCoroutine(fader.FadeInElement(darknessCanvas, 1));
@@ -49,5 +54,11 @@ public class GameManager : MonoBehaviour
     {
         yield return StartCoroutine(fader.FadeInElement(darknessCanvas, 1));
         SceneManager.LoadScene(2);
+    }
+
+    public IEnumerator LoadTitleScene()
+    {
+        yield return StartCoroutine(fader.FadeInElement(darknessCanvas, 1));
+        SceneManager.LoadScene(0);
     }
 }
