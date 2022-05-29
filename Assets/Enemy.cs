@@ -15,6 +15,7 @@ public class Enemy : MonoBehaviour
     private AudioSource audioSource;
     [SerializeField] private AudioClip deathSound;
     [SerializeField] private AudioClip attackSound;
+    [SerializeField] private AudioClip gravitySound;
     private GameObject player;
     private HealthContainer healthContainer;
     private Animator animator;
@@ -52,6 +53,7 @@ public class Enemy : MonoBehaviour
 
     public void GravityKill()
     {
+        audioSource.PlayOneShot(gravitySound);
         this.gravityKill = true;
     }
 
