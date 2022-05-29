@@ -25,7 +25,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7756991681668094657, guid: 9d14eb51a3785b940995abcc4d85e23c, type: 3}
       propertyPath: dropMoney
-      value: 5
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 7756991681668094657, guid: 9d14eb51a3785b940995abcc4d85e23c, type: 3}
       propertyPath: deathSound

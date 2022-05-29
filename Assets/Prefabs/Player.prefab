@@ -61,7 +61,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxValue: 2147483647
-  value: 900
+  value: 0
 --- !u!82 &1040168059876765154
 AudioSource:
   m_ObjectHideFlags: 0

@@ -33,7 +33,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7756991681668094657, guid: 9d14eb51a3785b940995abcc4d85e23c, type: 3}
       propertyPath: dropMoney
-      value: 4
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 7756991681668094658, guid: 9d14eb51a3785b940995abcc4d85e23c, type: 3}
       propertyPath: m_Name

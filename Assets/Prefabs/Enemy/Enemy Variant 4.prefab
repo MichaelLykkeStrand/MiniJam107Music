@@ -21,7 +21,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1435928149628214790, guid: 6b0f00fad5a5b3a4fbb3899db9cc201a, type: 3}
       propertyPath: dropMoney
-      value: 10
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 1435928149628214791, guid: 6b0f00fad5a5b3a4fbb3899db9cc201a, type: 3}
       propertyPath: m_Sprite
