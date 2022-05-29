@@ -61,11 +61,11 @@ PrefabInstance:
       objectReference: {fileID: -715676870, guid: 7f019bcde9f333047a4e36c2ff02acb1, type: 3}
     - target: {fileID: 3044365519599637966, guid: bf05bdf8660963c4fae3347f1c6dd583, type: 3}
       propertyPath: speed
-      value: 55
+      value: 220
       objectReference: {fileID: 0}
     - target: {fileID: 3044365519599637966, guid: bf05bdf8660963c4fae3347f1c6dd583, type: 3}
       propertyPath: damage
-      value: 180
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3044365519599637973, guid: bf05bdf8660963c4fae3347f1c6dd583, type: 3}
       propertyPath: m_Name
