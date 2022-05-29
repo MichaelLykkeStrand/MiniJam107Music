@@ -194,7 +194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3aa9398270e22984a858dbe46dc18697, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameOverCanvas: {fileID: 0}
+  gameOverCanvas: {fileID: 3370725709909171717, guid: a7ea145651346f64cacd537b57445977, type: 3}
 --- !u!1 &58285031
 GameObject:
   m_ObjectHideFlags: 0
@@ -1315,7 +1315,7 @@ MonoBehaviour:
   - {fileID: 2099596740}
   enemies:
   - {fileID: 7756991681668094658, guid: 9d14eb51a3785b940995abcc4d85e23c, type: 3}
-  - {fileID: 7778281843214327264, guid: f1b10a1d8e1166b40aa20a230b801180, type: 3}
+  - {fileID: 6449591048730181689, guid: 2ea3d87917709e04184806b3badda4a6, type: 3}
 --- !u!1 &1120997310
 GameObject:
   m_ObjectHideFlags: 0
@@ -1688,6 +1688,66 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b7b3408b4b4621438268fa091deeba3, type: 3}
+--- !u!1 &1474447301
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1474447304}
+  - component: {fileID: 1474447303}
+  - component: {fileID: 1474447302}
+  m_Layer: 0
+  m_Name: Stats
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1474447302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1474447301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b190a2a80b8ad94597e139896ee2707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxValue: 2147483647
+  value: 0
+--- !u!114 &1474447303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1474447301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 338ee55d5cd7b1d4f85f76fb9af8cb94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alienKillContainer: {fileID: 1474447302}
+--- !u!4 &1474447304
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1474447301}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 498.8101, y: 239.48799, z: -1.7963121}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1559590630
 GameObject:
   m_ObjectHideFlags: 0

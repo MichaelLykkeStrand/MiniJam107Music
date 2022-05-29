@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -17,8 +18,16 @@ public class Projectile : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.GetComponent<Tower>() != null) return;
-        collision.gameObject.GetComponent<HealthContainer>().Subtract(damage);
-        Destroy(this.gameObject);
+        try
+        {
+            collision.gameObject.GetComponent<HealthContainer>().Subtract(damage);
+            Destroy(this.gameObject);
+        }
+        catch (Exception)
+        {
+
+        }
+
     }
 
 }

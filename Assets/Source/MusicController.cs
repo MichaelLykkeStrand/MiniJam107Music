@@ -23,6 +23,7 @@ public class MusicController : MonoBehaviour
     void Start()
     {
         GlobalAudioSource = gameObject.AddComponent<AudioSource>();
+        GlobalAudioSource.volume = 0.5f;
         Instance = this;
         StartGame();
     }

@@ -16,7 +16,6 @@ public class MusicTower : BaseTower
         MusicController.Instance.IncreaseVolume((int)noteName);
     }
 
-
     private void Attack(Melanchall.DryWetMidi.Interaction.Note note)
     {
         if(note.NoteName == this.noteName)

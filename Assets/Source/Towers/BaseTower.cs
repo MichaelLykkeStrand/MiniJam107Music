@@ -7,11 +7,13 @@ using UnityEngine;
 public class BaseTower : Tower
 {
     [SerializeField] private GameObject projectile;
+    [SerializeField] private AudioSource audioSource;
     [SerializeField] private float offset = .75f;
     private Animator animator;
 
     private void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         animator = GetComponent<Animator>();
     }
 

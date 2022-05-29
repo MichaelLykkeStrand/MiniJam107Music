@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 1391655662}
   - component: {fileID: 5766629261130699496}
   - component: {fileID: -9039214539846393065}
+  - component: {fileID: -8822112963464088714}
   m_Layer: 6
   m_Name: Enemy
   m_TagString: Enemy
@@ -102,12 +103,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4bbb1a5a3dcaad4a94542d85908a8ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dropMoney: 10
+  dropMoney: 2
   speed: 50
   damage: 40
   attackSpeed: 0.5
   deathSound: {fileID: 8300000, guid: 6841165b7cf82bf48a819e47a05ef7a3, type: 3}
-  attackSound: {fileID: 8300000, guid: 6841165b7cf82bf48a819e47a05ef7a3, type: 3}
+  attackSound: {fileID: 8300000, guid: da480701b10b014409ec471fbc6d61c1, type: 3}
 --- !u!114 &-4107872318676876386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,7 +172,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.042
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -275,3 +276,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-8822112963464088714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7756991681668094658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbd7a092cea11054eb4f1777ed371aaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particleEmitterObject: {fileID: 7947134199853769739, guid: ea6e62ef99ed5304594bdd2670a5bc88, type: 3}

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 980292529005144593}
   - component: {fileID: 980292529005144594}
   - component: {fileID: 6238987645914074234}
+  - component: {fileID: 2619852587199201936}
   m_Layer: 0
   m_Name: Disposer
   m_TagString: Untagged
@@ -119,6 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b610f3e20103a449991a7229a0283c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 500
 --- !u!61 &6238987645914074234
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -145,3 +147,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.67301565, y: 0.6344133}
   m_EdgeRadius: 0
+--- !u!114 &2619852587199201936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 980292529005144814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3303878536b1fa145a2c645d0a0913bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxValue: 0
+  value: 0

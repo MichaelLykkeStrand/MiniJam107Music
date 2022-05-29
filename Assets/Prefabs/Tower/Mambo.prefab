@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4527324810524525712}
   - component: {fileID: -8577623293398072919}
   - component: {fileID: 4979956560194915543}
+  - component: {fileID: 7419924811485214750}
   m_Layer: 0
   m_Name: Mambo
   m_TagString: Untagged
@@ -103,6 +104,7 @@ MonoBehaviour:
   price: 300
   name: Mambo
   projectile: {fileID: 3377888955821089832, guid: cda8707c5b5f5704bad9ce73a780f64d, type: 3}
+  audioSource: {fileID: 0}
   offset: 0.7
   noteName: 1
 --- !u!95 &4527324810524525712
@@ -165,3 +167,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &7419924811485214750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4661400033232473148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbd7a092cea11054eb4f1777ed371aaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particleEmitterObject: {fileID: 1560992430404040106, guid: 93a810f6459c6f84fac471e9afe36782, type: 3}

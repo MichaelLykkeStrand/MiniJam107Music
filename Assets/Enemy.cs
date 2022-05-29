@@ -17,6 +17,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private AudioClip attackSound;
     private GameObject player;
     private HealthContainer healthContainer;
+    private Animator animator;
 
     private void Start()
     {
@@ -24,11 +25,13 @@ public class Enemy : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         healthContainer = GetComponent<HealthContainer>();
         healthContainer.OnEmpty += HealthContainer_OnEmpty;
+        animator = GetComponent<Animator>();
     }
 
     private void HealthContainer_OnEmpty()
     {
         player.GetComponent<CurrencyContainer>().Add(dropMoney);
+        Stats.Instance.alienKillContainer.Add(1);
         MusicController.GlobalAudioSource.PlayOneShot(deathSound);
     }
 
@@ -66,6 +69,7 @@ public class Enemy : MonoBehaviour
                 health.OnEmpty += OnTargetDeath;
                 health.Subtract(damage);
                 audioSource.PlayOneShot(attackSound);
+                animator.Play("Attack");
                 StartCoroutine(CooldownCoroutine());
             }
             catch (Exception)
