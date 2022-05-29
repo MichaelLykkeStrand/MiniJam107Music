@@ -32,7 +32,7 @@ public class MusicController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (noteIndex >= timeStamps.Count) return;
+        if (noteIndex >= timeStamps.Count -1) return;
         if(noteIndex == timeStamps.Count - 1)
         {
             noteIndex++;
