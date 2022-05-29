@@ -565,6 +565,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: d934382d1293c534caf8360fb43977cd, type: 3}
   - {fileID: 8300000, guid: ce442368c2d3d334c8a70ad7e3d72376, type: 3}
   - {fileID: 8300000, guid: a3419e1f67832584fbe81e0a0b538ee2, type: 3}
+  - {fileID: 8300000, guid: 4193edbfe87491d4197ad382be709930, type: 3}
   songDelayInSeconds: 0
 --- !u!4 &254329970
 Transform:
