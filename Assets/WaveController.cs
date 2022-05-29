@@ -35,7 +35,6 @@ public class WaveController : MonoBehaviour
         {
             if (MusicController.Instance.GetAudioSourceTime() >= timeStamp)
             {
-                Debug.Log(noteIndex);
                 OnNote?.Invoke(notesLookup[noteIndex]);
                 noteIndex++;
             }

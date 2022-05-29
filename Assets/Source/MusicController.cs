@@ -42,11 +42,9 @@ public class MusicController : MonoBehaviour
             OnMusicFinish?.Invoke();
         }
         double timeStamp = timeStamps[noteIndex];
-        //Debug.Log(timeStamp);
         if (noteIndex < timeStamps.Count)
         {
             if (GetAudioSourceTime() >= timeStamp){
-                Debug.Log(noteIndex);
                 OnNote?.Invoke(notesLookup[noteIndex]);
                 noteIndex++;
             }
