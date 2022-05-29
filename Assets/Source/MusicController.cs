@@ -18,6 +18,7 @@ public class MusicController : MonoBehaviour
     public event Action<Note> OnNote;
     public float songDelayInSeconds;
     private int noteIndex = 0;
+    public event Action OnMusicFinish;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +32,12 @@ public class MusicController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (noteIndex >= timeStamps.Count) return;
+        if(noteIndex == timeStamps.Count - 1)
+        {
+            noteIndex++;
+            OnMusicFinish?.Invoke();
+        }
         double timeStamp = timeStamps[noteIndex];
         //Debug.Log(timeStamp);
         if (noteIndex < timeStamps.Count)
