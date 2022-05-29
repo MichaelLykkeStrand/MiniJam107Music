@@ -4,6 +4,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class MusicController : MonoBehaviour
 {
@@ -19,11 +20,13 @@ public class MusicController : MonoBehaviour
     public float songDelayInSeconds;
     private int noteIndex = 0;
     public event Action OnMusicFinish;
+    public AudioMixerGroup audioMixerGroupMusic, audioMixerGroupSFX;
 
     // Start is called before the first frame update
     void Start()
     {
         GlobalAudioSource = gameObject.AddComponent<AudioSource>();
+        GlobalAudioSource.outputAudioMixerGroup = audioMixerGroupSFX;
         GlobalAudioSource.volume = 0.5f;
         Instance = this;
         StartGame();
@@ -77,6 +80,7 @@ public class MusicController : MonoBehaviour
         {
             AudioSource audioSource = this.gameObject.AddComponent<AudioSource>();
             audioSource.volume = 0f;
+            audioSource.outputAudioMixerGroup = audioMixerGroupMusic;
             noteDict.Add(i, audioSource);
             audioSource.clip = audioClips[i];
             audioSource.Play();
