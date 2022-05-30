@@ -99,4 +99,4 @@ MonoBehaviour:
   speedX: 0
   speedY: 6
   damage: 0
-  coinPerAttack: 15
+  coinPerAttack: 10

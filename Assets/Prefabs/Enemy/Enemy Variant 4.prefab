@@ -73,11 +73,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4519019447418390361, guid: 6b0f00fad5a5b3a4fbb3899db9cc201a, type: 3}
       propertyPath: value
-      value: 1000
+      value: 750
       objectReference: {fileID: 0}
     - target: {fileID: 4519019447418390361, guid: 6b0f00fad5a5b3a4fbb3899db9cc201a, type: 3}
       propertyPath: maxValue
-      value: 1000
+      value: 750
       objectReference: {fileID: 0}
     - target: {fileID: 8846597550443505616, guid: 6b0f00fad5a5b3a4fbb3899db9cc201a, type: 3}
       propertyPath: m_Controller
